@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>内科疾病诊疗总框架 · 内科学I</title>
+
+<!-- 共享层在 .learning/assets/，课件在 .learning/subjects/<slug>/lessons/ 下，所以是 ../../../assets/ -->
+<link rel="stylesheet" href="../../../assets/sayo/sayo.css">
+<link rel="stylesheet" href="../../../assets/learn-theme.css">
+<link rel="stylesheet" href="../assets/style.css">
+
+<!-- 主题要在首帧前应用，避免闪白/闪黑 -->
+<script src="../../../assets/learn-theme.js"></script>
+<script>LearnTheme.apply();</script>
+</head>
+
+<body class="lesson-body">
+
+<nav class="lesson-bar">
+  <a href="../index.html">← 返回课程</a>
+  <span>内科学I</span>
+  <span class="lesson-bar__no">0001</span>
+  <!-- 课件页自带主题开关：学生从文件管理器直接打开课件时也能切暗色 -->
+  <label class="syo-toggle syo-toggle--theme lesson-bar__toggle" title="切换深浅主题" aria-label="切换深浅主题">
+    <input type="checkbox" id="lesson-theme-checkbox" checked>
+    <span class="syo-toggle-track"></span>
+    <span class="syo-toggle-knob">
+      <svg class="syo-toggle-sun" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="3.5" stroke="#f57c00" stroke-width="1.5"/><path d="M10 2v2.5M10 15.5V18M2 10h2.5M15.5 10H18M4.34 4.34l1.77 1.77M13.89 13.89l1.77 1.77M4.34 15.66l1.77-1.77M13.89 6.11l1.77-1.77" stroke="#f57c00" stroke-width="1.2" stroke-linecap="round"/></svg>
+      <svg class="syo-toggle-moon" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16.5 12.5A6 6 0 019 4.5a6 6 0 007.5 8z" stroke="#5c6bc0" stroke-width="1.5" stroke-linejoin="round"/></svg>
+    </span>
+  </label>
+</nav>
+
+<article class="lesson">
+
+  <header class="lesson-header">
+    <span class="lesson-header__eyebrow">0001 · 内科疾病诊疗总框架</span>
+    <h1>内科疾病诊疗总框架</h1>
+    <p class="lesson-goal"><b>本节目标：</b>说出呼吸、循环两大系统的疾病版图与任何主诉都沿之推进的同一条诊疗主线；说明掌握、熟悉、了解三档各自的达标动作，说出病例分析题的固定结构，分清教材、指南库、题库三件工具各自解决什么问题。</p>
+  </header>
+
+  <!-- ── 正文：渲染器按内容文件（lessons/<序号>-<节点id>.md）产出，块词汇见 docs/课件内容格式.md ── -->
+
+  <h2>从一条主诉出发</h2>
+
+  <p>门诊室里，病人坐下后说的第一句话，往往是「咳嗽二十年，最近喘得厉害」。这句话写进病历，称为主诉（chief complaint）。从这句话开始，到敲定一份治疗方案为止，内科医生沿一条固定线索推进：先问病史，再做体格检查，必要时开具辅助检查，综合全部资料形成初步诊断，同时列出需要排除的疾病，最后才是治疗，治疗开始后还要随访转归。</p>
+
+  <p>内科学（internal medicine）的命名本身标出了它的位置：相对以手术为主要治疗手段的外科学（surgery），内科学以药物和其他非手术手段诊疗内脏系统的疾病。教学大纲把这门课定位为临床医学共性诊断与治疗思维的集中体现——临床上内科疾病最为常见，在这里练成的问诊、查体与决策思路，可以迁移到其他临床学科。</p>
+
+  <p>这条线索的具体形态是六个环节。本课先记住它的形状，后面每节课都把某个环节摊开到某一个病上细讲。</p>
+
+  <figure class="lesson-figure lesson-figure--inline" role="img" aria-label="诊疗主线六站流程">
+<svg width="740" height="120" viewBox="0 0 740 120" role="img" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="ah1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+<path d="M0 0L8 4L0 8z" fill="currentColor"/>
+</marker>
+</defs>
+<g fill="none" stroke="currentColor" stroke-width="1.5">
+<rect x="10" y="38" width="100" height="44" rx="6"/>
+<rect x="134" y="38" width="100" height="44" rx="6"/>
+<rect x="258" y="38" width="100" height="44" rx="6"/>
+<rect x="382" y="38" width="100" height="44" rx="6"/>
+<rect x="506" y="38" width="100" height="44" rx="6"/>
+<rect x="630" y="38" width="100" height="44" rx="6"/>
+<path d="M112 60h18" marker-end="url(#ah1)"/>
+<path d="M236 60h18" marker-end="url(#ah1)"/>
+<path d="M360 60h18" marker-end="url(#ah1)"/>
+<path d="M484 60h18" marker-end="url(#ah1)"/>
+<path d="M608 60h18" marker-end="url(#ah1)"/>
+</g>
+<g fill="currentColor" font-size="14" text-anchor="middle">
+<text x="60" y="65">病史问诊</text>
+<text x="184" y="65">体格检查</text>
+<text x="308" y="65">辅助检查</text>
+<text x="432" y="65">初步诊断</text>
+<text x="556" y="65">鉴别诊断</text>
+<text x="680" y="65">治疗随访</text>
+</g>
+<g fill="currentColor" font-size="11" text-anchor="middle" opacity="0.65">
+<text x="60" y="26">第 1 站</text>
+<text x="184" y="26">第 2 站</text>
+<text x="308" y="26">第 3 站</text>
+<text x="432" y="26">第 4 站</text>
+<text x="556" y="26">第 5 站</text>
+<text x="680" y="26">第 6 站</text>
+</g>
+</svg>
+    <figcaption>图 1 · 从主诉到随访的六个环节</figcaption>
+  </figure>
+
+  <div class="quiz" data-quiz='[
+  {
+    "q": "一位病人主诉「咳嗽二十年，最近喘得厉害」。\n医生已问完病史，接下来按主线推进最该做哪一步？",
+    "opts": [
+      "开具肺功能与胸部影像",
+      "直接下初步诊断",
+      "先行经验性药物治疗",
+      "开始体格检查"
+    ],
+    "ans": 3,
+    "why": "六站固定顺序是病史问诊→体格检查→辅助检查→初步诊断→\n鉴别诊断→治疗随访；辅查排在查体之后，诊断要等资料集齐。"
+  },
+  {
+    "q": "诊断为什么排在辅助检查之后？\n治疗又为什么排在鉴别诊断之后？",
+    "answer": "初步诊断是病史、查体与辅查全部资料的综合结论，资料\n没齐就下诊断，等于先有结论再回头找证据。鉴别诊断列的\n都是要先排除的危险病，没排除就治疗，会小病治好、大病漏掉。",
+    "criteria": "能说出「依据不齐不下诊断」和「不排除危险病会漏诊」\n两层理由；答出一层算摸到门，两层都说对才算过。"
+  }
+]'></div>
+
+  <h2>先呼吸后循环</h2>
+
+  <p>版图按系统分两篇，顺序与教材一致：第二篇呼吸系统疾病在前，第三篇循环系统疾病在后。两篇的理论学时几乎相同，呼吸 28.5 学时、循环 27 学时，都是本课的大头。先呼吸后循环的依据写在教学大纲里：教材第二篇排在第三篇之前；呼吸篇的问诊与查体训练最密，循环篇的心律失常与心肌梗死诊断又以心电图判读为前提，两者都靠前面练出的眼力。</p>
+
+  <p>进入两篇之前，先补两节地基：症状与体征各自提示哪些病，把诊断学的积累捡回来；缺氧、酸碱失衡与心肺泵机制，作为看懂后面每个病病理生理的钥匙。心电图不上机器、不贴电极，只学判读知识，并入循环篇。</p>
+
+  <figure class="lesson-figure lesson-figure--inline" role="img" aria-label="课程路线图">
+<svg width="700" height="170" viewBox="0 0 700 170" role="img" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="ah2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+<path d="M0 0L8 4L0 8z" fill="currentColor"/>
+</marker>
+</defs>
+<g fill="none" stroke="currentColor" stroke-width="1.5">
+<rect x="10" y="40" width="150" height="70" rx="6"/>
+<rect x="187" y="40" width="150" height="70" rx="6"/>
+<rect x="363" y="40" width="150" height="70" rx="6"/>
+<rect x="540" y="40" width="150" height="70" rx="6"/>
+<path d="M162 75h19" marker-end="url(#ah2)"/>
+<path d="M339 75h19" marker-end="url(#ah2)"/>
+<path d="M515 75h19" marker-end="url(#ah2)"/>
+</g>
+<g fill="currentColor" font-size="15" text-anchor="middle" font-weight="600">
+<text x="85" y="66">总框架</text>
+<text x="262" y="66">地基唤醒</text>
+<text x="438" y="66">呼吸篇 · 十六章</text>
+<text x="615" y="66">循环篇 · 十四章</text>
+</g>
+<g fill="currentColor" font-size="11" text-anchor="middle" opacity="0.75">
+<text x="85" y="88">本课</text>
+<text x="85" y="102">地图与主线</text>
+<text x="262" y="88">症状体征</text>
+<text x="262" y="102">病理生理与解剖</text>
+<text x="438" y="88">28.5 理论学时</text>
+<text x="438" y="102">自学章并入速览</text>
+<text x="615" y="88">27 理论学时</text>
+<text x="615" y="102">心电图只留判读</text>
+</g>
+</svg>
+    <figcaption>图 2 · 从总框架到循环篇的推进路线</figcaption>
+  </figure>
+
+  <h2>呼吸系统版图</h2>
+
+  <p>呼吸篇共十六章，另有一章自学的烟草病学概要。按「病在哪一段、考多深」归拢如下。考核定位一栏的含义：<b>重点</b>指以掌握级条目为主、病例分析题高频出场的章；<b>次级</b>指以熟悉、了解级为主的章；<b>速览</b>指标注自学的章，用一句话层级覆盖。</p>
+
+  <table>
+    <thead>
+      <tr><th>病种群</th><th>代表病种</th><th>考核定位</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>气道感染</td><td>上呼吸道感染、急性气管-支气管炎</td><td>次级：边界与用药原则</td></tr>
+      <tr><td>慢性气道病</td><td>慢性支气管炎、慢性阻塞性肺疾病、支气管哮喘</td><td>重点：机制、分级与治疗</td></tr>
+      <tr><td>支气管病变</td><td>支气管扩张症</td><td>次级：三大表现与影像</td></tr>
+      <tr><td>肺部感染</td><td>社区获得性肺炎（肺炎链球菌）、非典型病原体肺炎、肺脓肿</td><td>重点加次级</td></tr>
+      <tr><td>结核</td><td>肺结核</td><td>重点：检查判读与化疗</td></tr>
+      <tr><td>肺部肿瘤</td><td>肺癌</td><td>次级：分型分期框架</td></tr>
+      <tr><td>肺血管病</td><td>肺血栓栓塞症、肺动脉高压与慢性肺心病</td><td>次级：诊断阶梯</td></tr>
+      <tr><td>胸膜疾病</td><td>胸腔积液、气胸</td><td>次级：判读与紧急度</td></tr>
+      <tr><td>睡眠呼吸疾病</td><td>睡眠呼吸暂停低通气综合征</td><td>次级：概念速通</td></tr>
+      <tr><td>急性肺损伤</td><td>急性呼吸窘迫综合征</td><td>次级：识别与通气原则</td></tr>
+      <tr><td>呼吸衰竭</td><td>呼吸衰竭与血气判读、氧疗与机械通气基础</td><td>重点：判读与处理</td></tr>
+      <tr><td>自学章</td><td>间质性肺疾病、烟草病学概要</td><td>速览：考点在哪补哪</td></tr>
+    </tbody>
+  </table>
+
+  <p>需要先立起来的五个高频主角：慢阻肺、哮喘、肺炎、肺结核、呼吸衰竭。合上书能说出这五个，呼吸篇的骨架就成形了。</p>
+
+  <div class="quiz" data-quiz='[
+  {
+    "q": "下列哪一组全是呼吸篇的重点病种？",
+    "opts": [
+      "上呼吸道感染、急性气管-支气管炎、支气管扩张症、肺脓肿、肺癌",
+      "急性呼吸窘迫综合征、间质性肺疾病、烟草病学概要、胸膜疾病",
+      "慢阻肺、支气管哮喘、社区获得性肺炎、肺结核、呼吸衰竭",
+      "肺血栓栓塞症、肺动脉高压、胸腔积液、气胸、睡眠呼吸暂停"
+    ],
+    "ans": 2,
+    "why": "呼吸篇的五个高频主角是慢阻肺、哮喘、肺炎、肺结核、呼吸衰竭；\n其余选项以次级章、自学速览章为主。"
+  }
+]'></div>
+
+  <h2>循环系统版图</h2>
+
+  <p>循环篇十四章，其中四章标注自学。同样按病种群归拢。</p>
+
+  <table>
+    <thead>
+      <tr><th>病种群</th><th>代表病种</th><th>考核定位</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>心脏生理底座</td><td>循环总论：起搏传导、泵血、冠脉循环</td><td>底座：症状与问诊</td></tr>
+      <tr><td>心力衰竭</td><td>慢性心力衰竭、急性左心衰竭</td><td>重点：压舱石</td></tr>
+      <tr><td>心律失常</td><td>心电图判读、窦性与房性心律失常、室性心律失常、传导阻滞</td><td>重点：判读与抗凝决策</td></tr>
+      <tr><td>冠心病</td><td>稳定型心绞痛、急性冠脉综合征与心肌梗死</td><td>重点：识别与再灌注</td></tr>
+      <tr><td>高血压</td><td>定义分级与评估、药物治疗与急症</td><td>重点：选药与降压节奏</td></tr>
+      <tr><td>心肌与瓣膜</td><td>心肌疾病、二尖瓣狭窄与关闭不全、主动脉瓣狭窄与关闭不全</td><td>重点加次级</td></tr>
+      <tr><td>心包与心内膜</td><td>急性心包炎、感染性心内膜炎</td><td>次级：识别标准</td></tr>
+      <tr><td>骤停与大血管</td><td>心脏骤停与心肺复苏、主动脉夹层与周围血管病</td><td>必考：流程与识别</td></tr>
+      <tr><td>自学章</td><td>先天性心血管病、心血管神经症、肿瘤心脏病学、其他</td><td>速览：各一句话</td></tr>
+    </tbody>
+  </table>
+
+  <p>循环篇的四个高频主角：心力衰竭、心律失常、冠心病、高血压。瓣膜病的听诊特征与心肺复苏的流程，同样是年年出题的位置。</p>
+
+  <div class="quiz" data-quiz='[
+  {
+    "q": "关于循环篇的重点病种群，下列哪一组正确？",
+    "opts": [
+      "心肌疾病、心包炎、感染性心内膜炎、心脏骤停",
+      "心力衰竭、心律失常、冠心病、高血压",
+      "先天性心血管病、心血管神经症、肿瘤心脏病学、其他",
+      "二尖瓣狭窄、主动脉瓣关闭不全、肺动脉高压"
+    ],
+    "ans": 1,
+    "why": "循环篇的四个高频主角是心力衰竭、心律失常、冠心病、高血压；\n其余选项混着次级章、自学章与呼吸篇病种。"
+  }
+]'></div>
+
+  <h2>三档要求与达标动作</h2>
+
+  <p>教学大纲的知识目标只有三句话，构成整门课的出题范围与复习深度：</p>
+
+  <ul>
+    <li><b>掌握</b>：各系统常见疾病的概念、临床表现及诊断治疗要点。</li>
+    <li><b>熟悉</b>：各系统常见疾病的流行病学及辅助检查。</li>
+    <li><b>了解</b>：各系统常见疾病的病因及发病机制。</li>
+  </ul>
+
+  <p>三档各自对应的达标动作与在病例分析题里的位置如下。</p>
+
+  <table>
+    <thead>
+      <tr><th>档位</th><th>达标动作</th><th>对应题型</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>掌握</td><td>合上书能复述概念与表现，能写出诊断依据、鉴别诊断和治疗原则</td><td>病例分析题的答案主体、简答题</td></tr>
+      <tr><td>熟悉</td><td>看到检查申请单与结果能判读，知道该选哪项检查</td><td>选择题的判读素材、病例题里的辅查证据</td></tr>
+      <tr><td>了解</td><td>能解释病因与机制，回答「为什么」类问题</td><td>选择题、简答题里的机制分</td></tr>
+    </tbody>
+  </table>
+
+  <p>以慢阻肺一章为例，掌握级条目覆盖「概念、临床表现、分级、诊断、鉴别诊断、并发症及治疗」，即从病人进门到出院的全链条。该章的达标动作因此是写出一条完整诊疗链，而不只是背下概念。三档同时是时间分配的尺子：掌握级条目花整块时间，熟悉级跟随病例题训练，了解级用选择题巩固即可。</p>
+
+  <div class="quiz" data-quiz='[
+  {
+    "q": "「看到检查申请单与结果能判读，知道该选哪项检查」，\n这是教学大纲哪一档的达标动作？",
+    "opts": [
+      "掌握",
+      "熟悉",
+      "了解"
+    ],
+    "ans": 1,
+    "why": "掌握对应复述概念与写诊疗链，熟悉对应辅查判读，\n了解对应解释病因与机制。"
+  },
+  {
+    "q": "① 把掌握、熟悉、了解三档各配一个达标动作与一种题型；\n② 慢阻肺章为什么要按掌握级条目花整块时间？",
+    "answer": "① 掌握：复述概念与表现，写诊断依据、鉴别诊断和治疗原则，\n对应病例分析题主体；熟悉：判读检查申请单与结果，对应选择\n题判读素材；了解：解释病因与机制，对应选择题与简答机制分。\n② 慢阻肺章的掌握级条目覆盖概念、表现、分级、诊断、鉴别、\n并发症与治疗全链条，是病例分析题的压舱内容。",
+    "criteria": "三档与达标动作、题型三对配齐；指出慢阻肺章掌握级条目\n是病例分析题压舱内容。配错一档要说出差在哪一档。"
+  }
+]'></div>
+
+  <h2>病例分析题的结构</h2>
+
+  <p>课终考核为闭卷笔试，占总评六成，题型分选择题、简答题、病例分析题三类。病例分析题给一段病例——主诉、现病史、体征与若干辅助检查结果——然后固定三问：诊断与诊断依据、鉴别诊断、治疗原则。三问正是诊疗主线的后三站：把初步诊断写成结论句，把辅查证据逐条挂在诊断名下，把治疗分条写成原则。</p>
+
+  <p>以一道典型题面为例：「55 岁男性，吸烟 30 年，咳嗽咳痰 20 年，今冬加重，上两层楼即喘。查体：桶状胸，呼气延长。肺功能：FEV1/FVC 0.55。」三问的答法骨架如下。</p>
+
+  <ul>
+    <li>诊断：慢性阻塞性肺疾病（写成结论句）。</li>
+    <li>诊断依据：长期吸烟史与慢性咳痰喘病程；桶状胸、呼气延长等肺气肿体征；肺功能提示不完全可逆的气流受限。</li>
+    <li>鉴别诊断：支气管哮喘、支气管扩张症、心力衰竭（各附一句排除理由）。</li>
+    <li>治疗原则：支气管扩张剂，按需使用糖皮质激素，控制性氧疗，处理诱因与并发症。</li>
+  </ul>
+
+  <p>每一条依据背后的判读方法——肺功能界值怎么读、糖皮质激素什么时候上、氧疗浓度怎么定——分别是呼吸篇对应章节的内容，本课只记结构。读结构时可以用排错的眼光：一份把诊断依据与治疗原则对调了位置的答案，错在哪、怎么改。</p>
+
+  <figure class="lesson-figure lesson-figure--inline" role="img" aria-label="病例分析题三问结构">
+<svg width="720" height="230" viewBox="0 0 720 230" role="img" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="ah3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+<path d="M0 0L8 4L0 8z" fill="currentColor"/>
+</marker>
+</defs>
+<g fill="none" stroke="currentColor" stroke-width="1.5">
+<rect x="10" y="65" width="170" height="100" rx="6"/>
+<rect x="250" y="14" width="460" height="58" rx="6"/>
+<rect x="250" y="86" width="460" height="58" rx="6"/>
+<rect x="250" y="158" width="460" height="58" rx="6"/>
+<path d="M184 108 L244 44" marker-end="url(#ah3)"/>
+<path d="M184 115 L244 115" marker-end="url(#ah3)"/>
+<path d="M184 122 L244 186" marker-end="url(#ah3)"/>
+</g>
+<g fill="currentColor" font-size="14" text-anchor="middle" font-weight="600">
+<text x="95" y="108">病例资料</text>
+<text x="480" y="40">第一问 · 诊断与诊断依据</text>
+<text x="480" y="112">第二问 · 鉴别诊断</text>
+<text x="480" y="184">第三问 · 治疗原则</text>
+</g>
+<g fill="currentColor" font-size="11" text-anchor="middle" opacity="0.75">
+<text x="95" y="132">主诉 · 现病史</text>
+<text x="95" y="150">体征 · 辅查结果</text>
+<text x="480" y="60">把初步诊断写成结论句，辅查证据逐条对应</text>
+<text x="480" y="132">列出要排除的病，各附一句排除理由</text>
+<text x="480" y="204">分条写原则，不写处置流水账</text>
+</g>
+</svg>
+    <figcaption>图 3 · 病例分析题的三个固定设问</figcaption>
+  </figure>
+
+  <div class="quiz" data-quiz='[
+  {
+    "q": "病例题面：55 岁男性，吸烟 30 年，咳痰喘 20 年，桶状胸，\n呼气延长，FEV1/FVC 0.55。一位同学这样作答：\n诊断依据：用支气管扩张剂；按需使用糖皮质激素；控制性氧疗。\n鉴别诊断：支气管哮喘、支气管扩张症、心力衰竭。\n治疗原则：长期吸烟史；桶状胸、呼气延长；FEV1/FVC 0.55。\n① 他的答案错在哪？\n② 三问各自的合格写法是什么？",
+    "answer": "第一问装的是第三问的内容，第三问装的是第一问的内容：\n诊断依据应挂主诉现病史、体征、辅查三类证据（吸烟史、\n咳痰喘病程、桶状胸、呼气延长、肺功能），治疗原则才写用药\n与处理（支扩剂、激素、氧疗、处理诱因）。第二问只列病名，\n还缺每种病的一句排除理由。合格写法：诊断写成结论句；依据\n逐条挂证据；鉴别一病一理由；治疗分条写原则，不写流水账。",
+    "criteria": "指出「诊断依据与治疗原则对调」这一主要错误；指出鉴别\n诊断缺排除理由；能复述三问固定顺序与各自装什么。\n三项全中算过，缺项说明缺在哪。"
+  }
+]'></div>
+
+  <h2>三件工具的分工</h2>
+
+  <p>三件工具从开课用到考试，各管一段：</p>
+
+  <ul>
+    <li><b>教材</b>（《内科学》第 10 版，人卫 2024）：定位考点。每个病在哪一篇、哪一章，三档要求的原文怎么写，一律以它为准。</li>
+    <li><b>指南库</b>（中华医学期刊全文数据库、医脉通指南、GOLD 等）：核对版本。治疗分层、用药时机这类随年月修订的条目，以最新指南和教材新版为准。</li>
+    <li><b>题库</b>（教材配套题、MOOC 测验、错题本）：检验是否真会。做过、做对过都不算证据，做错之后说得出错在哪里才算数；错题与重点卡片滚动复习。</li>
+  </ul>
+
+  <p>国家医学考试网的执业医师资格考试大纲是另一把口径尺子，与校内教学大纲互为补充。每学一个病的循环固定为：课前在教材目录里给它归位，课中遇到易变条目去指南库核对版本，课后进题库检验，错题回到错题本。地图挂在墙上，每学完一个病就往上面钉一颗钉子。</p>
+
+  <div class="lesson-tip">
+    <b>版本差异</b>
+    <p>华中科技大学的内科学 MOOC 基于第 9 版教材，与第 10 版有差异的条目，用上面的指南库核对后再采信。</p>
+  </div>
+
+  <div class="quiz" data-quiz='[
+  {
+    "q": "学完肺炎一章，两套资料对治疗分层的写法不一样，\n该以谁为准？",
+    "opts": [
+      "教材第 10 版原文，一字不改",
+      "指南库里的最新指南与教材新版",
+      "MOOC 测验里老师讲的那一版",
+      "自己题库里收藏的那一版"
+    ],
+    "ans": 1,
+    "why": "教材定位考点，指南库核对版本，题库检验是否真会；\n易变条目以最新指南和教材新版为准。"
+  }
+]'></div>
+
+  <div class="lesson-practice">
+    <div class="lesson-practice__head">
+      <span class="lesson-practice__level">练习</span>
+      <span class="lesson-practice__title">三步把地图复述出来</span>
+    </div>
+
+      <ol>
+        <li>翻开《内科学》第 10 版目录，在第二篇、第三篇标题旁各圈出五个重点病种，抄成分两列的一张清单。</li>
+        <li>合上书，对着清单复述诊疗主线的六站；卡住就回看图 1 补一次，直到一口气说全。</li>
+        <li>任选一句常见主诉（如「夜间憋醒」「痰中带血」），在纸上写出六站各要问什么、查什么，与图 1 对一遍。</li>
+      </ol>
+  </div>
+
+  <ul class="lesson-resources">
+    <li><a href="https://www.ipmph.com/">《内科学》第10版（人卫，2024）第一篇 · 绪论</a><span class="lesson-resources__meta">教材 · 本课版图的正式出处</span></li>
+    <li><a href="https://www.nmec.org.cn/">国家医学考试网 · 执业医师资格考试大纲</a><span class="lesson-resources__meta">考纲口径 · 三档要求的另一把尺子</span></li>
+    <li><a href="https://rs.yiigle.com/">中华医学期刊全文数据库</a><span class="lesson-resources__meta">指南库 · 呼吸与循环系列指南原文</span></li>
+    <li><a href="https://guide.medlive.cn/">医脉通 · 指南</a><span class="lesson-resources__meta">指南库 · 版本与时效标注</span></li>
+    <li><a href="https://goldcopd.org/">GOLD 官网</a><span class="lesson-resources__meta">指南库 · 慢阻肺国际口径</span></li>
+  </ul>
+
+  <!-- ── 提问提示：固定写法，别删 ── -->
+
+  <div class="lesson-ask">
+    <b>没看懂？随时问</b>
+    把看不懂的段落（或报错）原样复制回会话，说一句哪里不懂就行，我只解释这一段，不打断你的进度。
+  </div>
+
+  <!-- ── 上/下节课指针由渲染器按 curriculum.yaml 的 nodes 顺序算（第一课无 --prev、最后一课无 --next） ── -->
+
+  <nav class="lesson-nav" aria-label="上一课 / 下一课">
+    <a class="lesson-nav__link lesson-nav__link--next" href="0002-foundation-exam.html">
+      <span class="lesson-nav__dir">下节课</span>
+      <span class="lesson-nav__title">症状体征的疾病提示</span>
+    </a>
+  </nav>
+
+  <footer class="lesson-footer">
+    StudyMate · 0001 内科疾病诊疗总框架 · 本地学习工作区
+  </footer>
+
+</article>
+
+<script src="../../../assets/sayo/sayo.js"></script>
+<script src="../assets/quiz.js" defer></script>
+<script src="../assets/lesson-toc.js" defer></script>
+<script>LearnTheme.wire(document.getElementById('lesson-theme-checkbox'));</script>
+</body>
+</html>
