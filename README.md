@@ -50,15 +50,25 @@ Production Deployment Protection（Vercel 已宣布该保护对所有套餐免�
 
 ## 更新课件后重新部署
 
-学习工作区里生成了新课文/新科目后，重跑打包脚本再推送：
+学习工作区里生成了新课文/新科目后，重跑打包脚本，再二选一推送：
 
 ```powershell
+# 1. 重新打包（自动过滤个人数据 + 全量引用自检）
 pwsh -File "E:\Deepseek Harness\杂项\package-site.ps1"
+
+# 2a. 网络正常时：git 推送
 cd "E:\Deepseek Harness\杂项\selfstudy-site"
 git add -A; git commit -m "update courseware"; git push
+
+# 2b. git 通道被掐断时：API 推送（复用远端已有 blob，只传变化的文件，小请求扛抖动）
+pwsh -File "E:\Deepseek Harness\杂项\fix-repo-via-api.ps1"
 ```
 
-Vercel 则把中间两步换成 `npx vercel --prod`。
+GitHub 收到更新后自动重新发布，1~2 分钟后网站就是新版。
+
+**历史说明**：远端主提交由 API 创建，与本地提交历史不一致（两边内容完全相同）。
+网络恢复后执行一次 `git push -f origin main`，本地历史即接管，之后走 2a 即可。
+API 脚本会逐文件比对 blob sha：内容没变的直接复用远端对象，只上传真正变化的文件。
 
 脚本做的事（详见脚本头部注释）：拷课件 → 把根页 `.learning/` 引用改写为 `learning/`
 （部署副本不带隐藏点目录）→ 摘掉科目页上指向个人笔记的附件链接 → 写 `.nojekyll`
