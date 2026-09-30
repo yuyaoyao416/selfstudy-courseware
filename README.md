@@ -50,11 +50,7 @@ Production Deployment Protection（Vercel 已宣布该保护对所有套餐免�
 
 ## 更新课件（已自动化）
 
-学习工作区里生成了新课文/新科目后，**什么也不用做**——两条自动链路会把更新送到 GitHub：
-
-1. **会话内即推**：每次课程更新后，学习 Agent 主动运行 `sync-courseware.ps1`
-2. **计划任务兜底**：Windows 计划任务 `SelfStudyCoursewareSync` 每 15 分钟检查一次，
-   有改动就打包 → 提交 → 推送（Agent 漏跑也会补上）
+学习工作区里生成了新课文/新科目后，**什么也不用做**——每次课程更新后，学习 Agent 会主动运行 `sync-courseware.ps1` 把更新送到 GitHub。
 
 手动触发（想立刻看到效果时）：
 
